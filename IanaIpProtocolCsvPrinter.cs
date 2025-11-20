@@ -2,9 +2,9 @@
 
 #:package CsvHelper@33.1.0
 
+using CsvHelper;
 using System;
 using System.Globalization;
-using CsvHelper;
 using System.IO;
 
 string[] arguments = Environment.GetCommandLineArgs();
@@ -44,9 +44,9 @@ try
             ianaIpProtocols.Add(protocol);
         }
 
-        foreach(IpProtocol ipProtocol in ianaIpProtocols)
+        foreach(IpProtocol protocol in ianaIpProtocols)
         {
-            Console.WriteLine(ipProtocol.ToString());
+            Console.WriteLine(protocol.ToString());
         }
     }
 }catch (Exception exception)
@@ -66,8 +66,8 @@ public class IpProtocol()
     {
         return "Value: " + Number + " " +
             "Keyword: " + Keyword + " " +
-             "Protocol: " + Protocol + " " +
+            "Protocol: " + Protocol + " " +
             "IPv6 Extension Header: " + Ipv6ExtensionHeader + " " +
-             "Reference: " + Reference;
+            "Reference: " + Reference;
     }
 }

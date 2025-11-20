@@ -1,5 +1,5 @@
 # IanaIpProtocolCsvPrinter.cs
-Simple project to test out dotnet 10 shebang scripts. https://devblogs.microsoft.com/dotnet/announcing-dotnet-run-app/
+Simple script to test out dotnet 10 shebang scripts. https://devblogs.microsoft.com/dotnet/announcing-dotnet-run-app/
 
 All this does is take in an iana prepared csv file and print the contents to std out
 
